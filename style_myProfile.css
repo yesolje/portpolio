@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "escoreDream7";
+    src: url("../fonts/SCDream7.otf"); /*폰트 : 에스코어드림7*/
+}
+@font-face {
+    font-family: "escoreDream6";
+    src: url("../fonts/SCDream6.otf"); /*폰트 : 에스코어드림6*/
+}
+@font-face {
+    font-family: "escoreDream5";
+    src: url("../fonts/SCDream5.otf"); /*폰트 : 에스코어드림6*/
+}
+@font-face {
+    font-family: "escoreDream4";
+    src: url("../fonts/SCDream4.otf"); /*폰트 : 에스코어드림4*/
+}
+@font-face {
+    font-family: "escoreDream3";
+    src: url("../fonts/SCDream3.otf"); /*폰트 : 에스코어드림3*/
+}
+@font-face {
+    font-family: "escoreDream2";
+    src: url("../fonts/SCDream2.otf"); /*폰트 : 에스코어드림3*/
+}
+@font-face {
+    font-family: "escoreDream1";
+    src: url("../fonts/SCDream1.otf"); /*폰트 : 에스코어드림3*/
+}
+
+/*main 페이지 style 설정*/
+#main_body{
+    margin: 0px; /*웹전체 마진 0으로 설정*/
+    background-color:rgb(102,142,253);/*Main 배경색상*/
+    padding-left: 100px; /*Main 좌여백*/
+    padding-top: 70px; /*Main 상단여백 */
+}
+
+header #title{/*타이틀*/
+    font-family:"escoreDream7";
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+}
+header #title-sub{/*부제목*/
+    font-family:"escoreDream4";
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 130px;
+}
+article #title-contact p:nth-child(1){/*contact*/
+    font-family:"escoreDream6";
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin:0px;
+}
+article #title-contact p:nth-child(2){/*contact 내용*/
+    font-family:"escoreDream3";
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin:0px;
+}
+article #title-contact p:nth-child(3){/*contact 내용*/
+    font-family:"escoreDream3";
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin:0px;
+}
+article #click-image{
+    position: absolute;
+    top:470px;
+    right:50px;
+}
+article #click-image:hover{
+    filter: opacity(0.5) drop-shadow(0 0 0 #eeeeee);
+    cursor: pointer;
+}
+article #click-image #next-page-icon{/*다음페이지로 이동하는 이미지*/
+	width:200px;
+}
+
+article #click-image #clickme{/*커서그림 옆에 작은 click me!글씨*/
+    font-family:"escoreDream3";
+    color: rgb(255, 255, 255);
+    transform: rotate(50deg);
+    position: relative;
+    bottom:150px;
+    left:30px;
+}
+
+
+/*index 페이지 style 설정*/
+ul{
+    list-style-type :none;/*모든 리스트 번호메기기 없음*/
+}
+/*flex 간격 설정*/
+#content{   
+    margin:50px;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+#content #content_1{
+    flex-grow: 3;
+    border-right :2px solid #eeeeee;
+}
+#content #content_2{
+    flex-grow: 1;
+    border-right :2px solid #eeeeee;
+}
+#content #content_3{
+    flex-grow: 1;
+}
+#content_2 ul , #content_3 ul {
+    margin:30px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 45px;
+}
+#content_2 ul:nth-child(3) , #content_3 ul:nth-child(3) {
+    border-bottom: none;
+}
+/*내부 글꼴 조정*/
+#content #content_1 li:nth-child(1){
+    font-family:"escoreDream2";
+    font-size: 47px;
+}
+#content #content_1 li:nth-child(2){
+    font-family:"escoreDream5";
+    color:rgb(102,142,253);
+    font-size: 64px;
+}
+#content #content_1 li:nth-child(3){
+    font-family:"escoreDream4";
+    font-size: 47px;
+}
+#content #content_title{
+    font-family:"escoreDream7";
+    color:rgb(102,142,253);
+    font-size: 35px;
+}
+#content #content_little_title{
+    font-family:"escoreDream5";
+    color:rgb(102,142,253);
+    font-size: 18px;
+    line-height: 150%;
+}
+#content li{
+    font-family:"escoreDream3";
+    font-size: 16px;
+    line-height: 140%;
+}
+/*사진 설정*/
+#content #myFace{
+    position: relative;
+	width:170px;
+}
